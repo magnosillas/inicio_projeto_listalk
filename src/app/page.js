@@ -11,9 +11,6 @@ export default function PageHome() {
     <main >
       <Home setVisible={setVisible}></Home>
       { visible && <Login setVisible={setVisible} />}
-
-      <Link href={"/categoria"} >Categorias</Link>
-
     </main>
   )
 }
