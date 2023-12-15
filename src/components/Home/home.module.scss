@@ -1,0 +1,29 @@
+.home{
+    background: #FFE8D6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 35px;
+
+    h1{
+        
+    }
+
+    button{
+        background-color: #FFBF68;
+
+        border: 2px solid #FFBF68;
+        border-radius: 7px;
+
+        padding: 7px 20px;
+        
+        cursor: pointer;
+
+        &:hover{
+            background-color: #FFE8D6;
+            transition: all .4s;
+        }
+    }
+}
