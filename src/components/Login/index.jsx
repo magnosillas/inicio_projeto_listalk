@@ -4,7 +4,7 @@ import { useState } from "react";
 import { postLogin } from "@/api/login/postLogin";
 import api from "@/api/http-common";
 
-const Login = () =>{
+const Login = ({setVisible}) =>{
     const [login, setLogin] = useState("");
     const [senha, setSenha] = useState("");
 
@@ -28,6 +28,7 @@ const Login = () =>{
 
     return(
         <div className={styles.login}>
+            <button className={styles.login__buttonClose} onClick={() => setVisible(false)}>Close</button>
             <div className={styles.login__status} >Status: {status}</div>
             <label htmlFor="login">Login</label>
             <input className={styles.login__input} type="text" value={login} onChange={(e) => setLogin( e.target.value)} />

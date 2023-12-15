@@ -10,7 +10,7 @@ export default function PageHome() {
   return (
     <main >
       <Home setVisible={setVisible}></Home>
-      { visible && <Login />}
+      { visible && <Login setVisible={setVisible} />}
 
       <Link href={"/categoria"} >Categorias</Link>
 
