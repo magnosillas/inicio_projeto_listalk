@@ -1,0 +1,29 @@
+.categories{
+    
+
+    h1{        
+        background: #FFE8D6;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    h2{
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    &__buttonNewCategory{
+        margin: 25px;
+        padding: 12px 25px;
+
+        cursor: pointer;
+    }
+
+    &__listaCategories{
+        background-color: #FFE8D6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
