@@ -3,10 +3,12 @@ import styles from "./login.module.scss";
 import { useState } from "react";
 import { postLogin } from "@/api/login/postLogin";
 import api from "@/api/http-common";
+import { useRouter } from "next/navigation";
 
 const Login = ({setVisible}) =>{
     const [login, setLogin] = useState("");
     const [senha, setSenha] = useState("");
+    const {push} =  useRouter();
 
     const { status, mutate } = useMutation(
         async () =>{
@@ -14,12 +16,13 @@ const Login = ({setVisible}) =>{
         },
         {
             onSuccess: (res) =>{
-                console.log(res.data)
+                console.log(res.data);
                 api.defaults.headers.authorization = `Bearer ${res.data.access_token}`;
+                push("/categoria");
             },
 
             onError: (error) =>{
-                console.log(error)
+                console.log(error);
             }
 
         }
