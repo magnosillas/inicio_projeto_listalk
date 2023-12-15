@@ -27,13 +27,13 @@ const Login = () =>{
     )
 
     return(
-        <div>
-            <div>{status}</div>
+        <div className={styles.login}>
+            <div className={styles.login__status} >Status: {status}</div>
             <label htmlFor="login">Login</label>
-            <input type="text" value={login} onChange={(e) => setLogin( e.target.value)} />
+            <input className={styles.login__input} type="text" value={login} onChange={(e) => setLogin( e.target.value)} />
             <label htmlFor="senha" >Senha</label>
-            <input type="password" value={senha} onChange={(e) => setSenha( e.target.value)} />
-            <button onClick={() => mutate()}>Login</button>
+            <input className={styles.login__input} type="password" value={senha} onChange={(e) => setSenha( e.target.value)} />
+            <button className={styles.login__buttonLogin} onClick={() => mutate()}>Login</button>
         </div>
     )
 }
