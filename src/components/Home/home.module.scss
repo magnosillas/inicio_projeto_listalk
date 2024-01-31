@@ -1,29 +1,36 @@
 .home{
-    background: #FFE8D6;
-
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 
-    padding: 20px 35px;
-
-    h1{
+    &__text{
+        display: flex;
+        flex-direction: column;
         
-    }
+        gap: 20px;
+        padding-right: 53px;
+        &__logo{
+            line-height: 0.67;
+            padding-bottom: 20%;
+            h1{
+                font-size: 128px;
+                font-weight: 700;
+                color: #FF9F1D;
+                
+            }
+            h1:last-child{
+                margin-left: 45%;
+                
+            }
+        }
 
-    button{
-        background-color: #FFBF68;
-
-        border: 2px solid #FFBF68;
-        border-radius: 7px;
-
-        padding: 7px 20px;
-        
-        cursor: pointer;
-
-        &:hover{
-            background-color: #FFE8D6;
-            transition: all .4s;
+        h2{
+            font-size: 40px;
+            color: #FFBF68;
+            font-weight: 400;
         }
     }
+
+    
 }

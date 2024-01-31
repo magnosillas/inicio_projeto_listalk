@@ -1,5 +1,5 @@
 
-import { getCategoria } from "@/api/categorias/getCategorias";
+import { getCategoria } from "@/api/api-common";
 import { useState, useEffect } from "react";
 import { useMutation } from "react-query";
 import styles from "./categories.module.scss";

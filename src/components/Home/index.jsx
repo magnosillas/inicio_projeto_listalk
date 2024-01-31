@@ -1,11 +1,27 @@
 import styles from "./home.module.scss";
-
-const Home = ({setVisible}) =>{
+import Image from 'next/image'
+const Home = () =>{
 
     return(
         <section className={styles.home}>
-            <h1>Home</h1>
-            <button onClick={() => setVisible(true)} >Login</button>
+            
+
+            <div className={styles.home__text}>
+                <div className={styles.home__text__logo}>
+                    <h1>LIST</h1>
+                    <h1>ALK</h1>
+                </div>
+                
+
+                <h2>Your Ultimate Destination for<br/> Cataloging Life's Favorites</h2>
+            </div>
+            <Image
+            src="/imagens/Home.png"
+            width={700}
+            height={700}
+            alt="Home Image"
+            />
+           
         </section>
     )
 }
