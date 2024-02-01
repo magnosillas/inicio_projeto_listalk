@@ -33,7 +33,9 @@ const ListasPage = () => {
     const addNewList = async () => {
         const newList = {
             "name": "Edit the list name...",
-            "description":"Add a description to your list here"
+            "description":"Add a description to your list here",
+            "category": categorias[0]
+
         }
         const response = await createList(newList);
         console.log(response);
